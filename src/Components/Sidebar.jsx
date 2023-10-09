@@ -1,5 +1,5 @@
-import React from "react";
-import { AiOutlineClose } from "react-icons/ai";
+import React, { useState } from "react";
+
 import {
   BsCart3,
   BsGrid1X2Fill,
@@ -12,19 +12,18 @@ import {
 } from "react-icons/bs";
 
 const Sidebar = () => {
+  const [sidebar, closeSidebar] = useState(false);
+  const handleSidebar = () => {
+    closeSidebar(!sidebar);
+  };
   return (
-    <div
-      className="bg-[#1f1f20] h-full fixed top-0 w-[300px] text-white "
-      id="Sidebar"
-    >
+    <div className=" left-0 top-0 w-[300px] h-full bg-[#1f1f20]  text-white fixed ">
       <div className="mx-4">
         <div className=" my-10 mx-6">
           <span className="flex items-center">
             <BsCart3 size={25} />
             <p className="text-xl mx-2"> Store</p>
           </span>
-
-          <AiOutlineClose size={30} className="hidden" />
         </div>
         <div>
           <ul className="">

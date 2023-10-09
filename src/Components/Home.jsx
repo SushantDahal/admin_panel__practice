@@ -64,11 +64,11 @@ const Home = () => {
     },
   ];
   return (
-    <div className="bg-[#3b3a3c] max-w-[950px] ml-[300px] ">
+    <div className=" ml-[300px] md:h-screen h-full ">
       <div className=" text-white mx-4 py-5">
-        <h1>Dashboard</h1>
-        <div className="grid md:grid-cols-4 gap-4 uppercase">
-          <div className="bg-[#64a3ff] rounded-md">
+        <h1 className="text-2xl my-4 font-bold">Dashboard</h1>
+        <div className="grid md:grid-cols-4 gap-4 uppercase md:ml-auto">
+          <div className="bg-[#64a3ff] rounded-md md:mx-10 m-0 ">
             <div className="flex mx-4 items-center justify-between">
               <h3 className="font-bold py-4">Products</h3>
               <BsFillArchiveFill size={20} />
